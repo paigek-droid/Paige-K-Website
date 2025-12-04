@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paige Kasso Gallery</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/gallery.css" />
+
+  <link rel="icon" href="./images/thumbnail_IMG_6106.jpg">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">PK</a>
+
+    <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../project1/resume.html">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="../project2/gallery.html">Gallery</a></li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<br><br><br>
+  <!-- HERO -->
+  <header id="hero" class="hero">
+    <div class="page">
+      <div class="hero-box">
+        <div class="kicker">Welcome</div>
+        <h1>Photo Gallery by Paige Kasso</h1>
+        <p>A photo collection capturing the spirit, energy, and friendships of the Linfield Track & Field team.</p>
+        <div class="actions">
+          <a href="#gallery" class="btn fill">View Gallery</a>
+          <a href="#contact" class="btn ghost">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- Carousel-->
+<!-- Carousel -->
+<section class="section">
+  <div class="page">
+    <h2>Featured Photos</h2>
+    <p class="muted">Swipe or click through some of my favorite shots.</p>
+
+    <div id="campKCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#campKCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#campKCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#campKCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/Gerorgeoja/want to use/IMGP9462.JPEG" class="d-block w-100" alt="Linfield Track &amp; Field photo 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Gerorgeoja/want to use/IMGP9678.JPEG" class="d-block w-100" alt="Linfield Track &amp; Field photo 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Gerorgeoja/want to use/IMGP9682.JPEG" class="d-block w-100" alt="Linfield Track &amp; Field photo 3">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#campKCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#campKCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- GALLERY -->
+  <main id="gallery" class="section">
+    <div class="page">
+      <h2>Gallery</h2>
+      <p class="muted">Click any image to open full-size in a new tab.</p>
+
+      <div class="grid">
+        <figure class="tile">
+          <a href="./images/CampK/Want to use/IMGP9293.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="./images/CampK/Want to use/IMGP9293.JPG" alt="Gallery image 1" loading="lazy">
+          </a>
+          <figcaption class="caption">Celebrating a win during team games at the retreat.</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a href="./images/CampK/Want to use/IMGP9429.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="./images/CampK/Want to use/IMGP9429.JPG" alt="Gallery image 2" loading="lazy">
+          </a>
+          <figcaption class="caption">Post-lake smiles after an afternoon of outdoor activities.</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a href="./images/CampK/Want to use/IMGP9356.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="./images/CampK/Want to use/IMGP9356.JPG" alt="Gallery image 3" loading="lazy">
+          </a>
+          <figcaption class="caption">Candid moments and good energy with friends.</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a href="./images/CampK/Want to use/IMGP9416.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="./images/CampK/Want to use/IMGP9416.JPG" alt="Gallery image 4" loading="lazy">
+          </a>
+          <figcaption class="caption">Hype moment during a team challenge.</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a href="./images/CampK/Want to use/IMGP9300.JPG" target="_blank" rel="noopener noreferrer">
+            <img src="./images/CampK/Want to use/IMGP9300.JPG" alt="Gallery image 5" loading="lazy">
+          </a>
+          <figcaption class="caption">Connecting and catching up during a break in the woods.</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a href="./images/Gerorgeoja/want to use/georgeoja.JPEG" target="_blank" rel="noopener noreferrer">
+            <img src="./images/Gerorgeoja/want to use/georgeoja.JPEG" alt="Gallery image 6" loading="lazy">
+          </a>
+          <figcaption class="caption">End-of-day group photo—good vibes all around.</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a href="./images/Gerorgeoja/want to use/IMGP9462.JPEG" target="_blank" rel="noopener noreferrer">
+            <img src="./images/Gerorgeoja/want to use/IMGP9462.JPEG" alt="Gallery image 7" loading="lazy">
+          </a>
+          <figcaption class="caption">Pre-race conversation on the XC course.</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a href="./images/Gerorgeoja/want to use/IMGP9678.JPEG" target="_blank" rel="noopener noreferrer">
+            <img src="./images/Gerorgeoja/want to use/IMGP9678.JPEG" alt="Gallery image 8" loading="lazy">
+          </a>
+          <figcaption class="caption">Pushing the pace in the middle of the race.</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a href="./images/Gerorgeoja/want to use/IMGP9682.JPEG" target="_blank" rel="noopener noreferrer">
+            <img src="./images/Gerorgeoja/want to use/IMGP9682.JPEG" alt="Gallery image 9" loading="lazy">
+          </a>
+          <figcaption class="caption">The lead pack charging through the course.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </main>
+
+  <!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="page">
+    <h2>Contact</h2>
+    <p class="muted">Let’s connect — follow my work or reach out.</p>
+
+    <div class="social">
+      <a class="icon-btn" href="https://www.instagram.com/your-handle" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="bi bi-instagram"></i><span>Instagram</span>
+      </a>
+
+      <a class="icon-btn" href="mailto:you@example.com" aria-label="Email">
+        <i class="bi bi-envelope-fill"></i><span>Email</span>
+      </a>
+
+      <a class="icon-btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i><span>LinkedIn</span>
+      </a>
+
+     
+    </div>
+  </div>
+</section>
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="page">
+      <div class="footer-row">
+        <div>
+          <h3 class="brand">PK Gallery</h3>
+          <p class="small">&copy; 2025 Paige Kasso</p>
+        </div>
+        <div>
+          <p class="small">Back to <a href="#hero">top</a> • <a href="#">Instagram</a> • <a href="mailto:you@example.com">Email</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Menu toggle -->
+  <script>
+    function toggleMenu(){
+      document.getElementById('menu').classList.toggle('open');
+    }
+  </script>
+
+  <!-- Bootstrap JS (bundle includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

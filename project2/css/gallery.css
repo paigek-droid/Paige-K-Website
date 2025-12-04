@@ -1,0 +1,293 @@
+:root {
+  --soft-blue: #80A1BA;
+  --teal-blue: #91C4C3;
+  --mint-green: #B4DEBD;
+  --cream: #FFF7DD;
+
+  --dark: #2d2d2d;
+  --text: #2d2d2d;
+  --muted: #6b7280;
+}
+
+/* ---------- Base ---------- */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--text);
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .brand {
+  font-family: 'Merriweather', serif;
+}
+
+a {
+  color: var(--soft-blue);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--teal-blue);
+}
+
+.page {
+  max-width: 1100px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+/* ---------------- Navbar (Green Theme) ---------------- */
+.navbar {
+  background-color: #B4DEBD !important;   /* same green as experience cards */
+  padding: 0.75rem 1rem;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Brand text */
+.navbar-brand {
+  color: #2D2D2D !important;   /* dark text for contrast */
+  font-weight: bold;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #2D2D2D !important;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #80A1BA !important;  /* subtle blue accent on hover */
+}
+
+/* Toggler for mobile */
+.navbar-toggler {
+  border-color: #2D2D2D;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0); /* dark icon so it shows on green */
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  padding: 3.5rem 0;
+  background: var(--cream);
+}
+
+.hero-box {
+  background: linear-gradient(135deg, var(--soft-blue), var(--teal-blue));
+  color: #fff;
+  border-radius: 18px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero .kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.hero h1 {
+  margin: 0.4rem 0 0;
+  font-size: clamp(1.6rem, 3.8vw, 2.6rem);
+  text-align: center;
+}
+
+.hero p {
+  margin: 0.8rem 0 0;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero .actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.fill {
+  background: var(--mint-green);
+  color: var(--dark);
+  box-shadow: 0 4px 8px rgba(128, 161, 186, 0.2);
+}
+.btn.fill:hover {
+  background: var(--teal-blue);
+  color: #fff;
+}
+
+.btn.ghost {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.btn.ghost:hover {
+  background: var(--mint-green);
+  color: var(--dark);
+}
+
+/* ---------- Sections ---------- */
+.section {
+  padding: 2.5rem 0;
+}
+.section h2 {
+  text-align: center;
+  margin: 0 0 0.25rem;
+}
+.muted {
+  color: var(--muted);
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+/* ---------- Gallery Grid ---------- */
+#gallery .page,
+#gallery .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.tile {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(128, 161, 186, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(128, 161, 186, 0.2);
+}
+.tile a {
+  display: block;
+  text-decoration: none;
+}
+.tile img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.caption {
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: var(--soft-blue);
+  color: #fff;
+  padding: 2.2rem 0;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer .footer-row,
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  footer .footer-row,
+  footer .row {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+footer a {
+  color: var(--mint-green);
+}
+footer a:hover {
+  color: var(--teal-blue);
+}
+footer .small {
+  opacity: 0.85;
+  font-size: 0.9rem;
+}
+/* ----- Contact section ----- */
+.contact {
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.02) 100%);
+}
+
+.social {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.icon-btn i {
+  font-size: 1.1rem;
+ 
+  color: var(--soft-blue);      
+}
+
+.icon-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  background: var(--mint-green);  
+  color: #1a1a1a;
+}
+
+.icon-btn:hover i {
+  color: #1a1a1a;
+}
+
+
+#campKCarousel .carousel-inner img {
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Keep carousel nicely sized */
+#campKCarousel {
+  max-width: 900px;
+  margin: 2rem auto 0 auto;
+}
