@@ -1,0 +1,27 @@
+.bg-lightgray{
+    background-color: lightgrey;
+}
+.text-orange-name{
+    color:orange;
+}
+.text-hex{
+    color:#f08080 ;
+}
+.text-rgb{
+    color:rgb(240, 128, 128);
+}
+.b-width-5{
+    border-width: 5px;
+}
+.b-style-solid{
+    border-style: solid;
+}
+.b-color-red{
+    border-color: red;
+}
+.border-red-5{
+    border: 5px solid red;
+}
+.card{
+    padding: 12px; margin: 12px 0; background: #fff;
+}

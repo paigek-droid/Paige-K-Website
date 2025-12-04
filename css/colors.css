@@ -1,0 +1,18 @@
+body{
+    background-color:#FFF7DD;
+}
+h1{
+    color: blue;
+}
+
+.pgreen{
+    color: green;
+    background-color: rgb(14, 2, 122);
+}
+.pyellow{
+    color: yellow;
+    background-color: darkgreen;
+}
+h4{
+    color:rgb(32, 80, 32) ;
+}

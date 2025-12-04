@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(250, 198, 206);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mainbcolr{
+    background-image: url(https://thumbs.dreamstime.com/b/incredibly-beautiful-sunset-sun-lake-sunrise-landscape-panorama-nature-sky-amazing-colorful-clouds-fantasy-design-115177001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hobby{
+    background-color: rgb(201, 248, 201);
+}
+.inlinespan{
+    background-color: rgb(191, 250, 230);
+}
+h1{
+    font-size: 40px;
+}
+.p1{
+    font-style: italic;
+}
+.p2{
+    font-style: inherit;
+}

@@ -1,0 +1,39 @@
+body{
+    background-color: bisque;
+}
+.h1class{
+    background-color: rgb(250, 179, 156);
+    border: 3px solid;
+   padding: 10px;
+   margin: 30px;
+}
+.pclass{
+    background-color: rgb(103, 172, 172);
+    border: 2px dotted;
+    padding: 10px;
+    margin: 30px;
+}
+.divclass{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(177, 144, 207);
+    border: 10px solid;
+    padding: 20px;
+    
+}
+.div2class{
+     width: 200px;
+    height: 200px;
+    background-color: rgb(144, 171, 207);
+    border: 10px solid;
+    padding: 20px;
+    margin-left: 260px;
+}
+.div3class{
+     width: 200px;
+    height: 200px;
+    background-color: rgb(144, 207, 158);
+    border: 10px solid;
+    padding: 20px;
+    margin-left: 520px;
+}

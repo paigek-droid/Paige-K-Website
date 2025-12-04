@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(191, 241, 194);
+}
+h1{
+    color:rgb(255, 0, 0);
+    background-color: rgb(137, 58, 240);
+
+}
+p{
+    color:darkcyan;
+    background-color: bisque;
+}
+h4{
+    color: darkorchid;
+}
+ul{
+    background-color: brown;
+    color: aliceblue;
+}
