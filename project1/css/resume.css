@@ -1,0 +1,276 @@
+/* ---------------- Base Styles ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background-color: #FFF7DD;
+  color: #2D2D2D;
+  line-height: 1.6;
+  /* so the fixed-top navbar doesn't cover the top of the page */
+  padding-top: 80px; /* adjust if your nav is taller/shorter */
+}
+
+/* ---------------- Navbar (Green Theme) ---------------- */
+.navbar {
+  background-color: #B4DEBD !important;   /* same green as experience cards */
+  padding: 0.75rem 1rem;
+  z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Brand text */
+.navbar-brand {
+  color: #2D2D2D !important;   /* dark text for contrast */
+  font-weight: bold;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #2D2D2D !important;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #80A1BA !important;  /* subtle blue accent on hover */
+}
+
+/* Toggler for mobile */
+.navbar-toggler {
+  border-color: #2D2D2D;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0); /* dark icon so it shows on green */
+  /* Brand text */
+.navbar-brand {
+  color: #2D2D2D !important;
+  font-weight: 700;
+  font-size: 1.4rem;   /* bigger brand text */
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #2D2D2D !important;
+  font-weight: 500;
+  font-size: 1.1rem;   /* increase size slightly */
+  margin-right: 1rem;
+}
+
+}
+
+/* ---------------- Header ---------------- */
+header {
+  background: linear-gradient(135deg, #80A1BA, #91C4C3);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header img.profile-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #B4DEBD;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  margin: 0.4rem 0;
+}
+
+.contact a {
+  color: #FFF7DD;
+  text-decoration: underline;
+}
+
+/* ---------------- Main Layout ---------------- */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffffb0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* ---------------- Section Titles ---------------- */
+h2 {
+  color: #2D2D2D;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #B4DEBD;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* ---------------- Lists ---------------- */
+ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------------- Job Cards ---------------- */
+.job {
+  background-color: #B4DEBD;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+.job h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1f3b4d;
+}
+
+.job .date {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  background-color: #80A1BA;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* google font utility */
+.merriweather-font {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* ---------------- Contact Section ---------------- */
+#contact {
+  background-color: #ffffffb0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin: 3rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #2D2D2D;
+  border-bottom: 3px solid #B4DEBD;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.contact-intro {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #2D2D2D;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #B4DEBD;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #2D2D2D;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #91C4C3;
+  box-shadow: 0 0 6px rgba(145,196,195,0.5);
+  outline: none;
+}
+
+.contact-form button {
+  background: linear-gradient(135deg, #91C4C3, #80A1BA);
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(135deg, #80A1BA, #91C4C3);
+  transform: translateY(-2px);
+}
+
+/* ---------------- References ---------------- */
+#references {
+  margin-top: 2rem;
+  padding: 1rem 0;
+}
+
+#references h2 {
+  font-family: 'Merriweather', serif;
+  border-bottom: 2px solid #91C4C3;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+#references ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#references li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
